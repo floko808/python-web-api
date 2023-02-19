@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  remote_user: ansible
+  vars:
+    - msg: Hello
+  tasks:
+    - name: Print Hello
+      debug:
+        msg: "{{ msg }} ansible"
+    - name: Pinga nemim
+      ping:
+  
