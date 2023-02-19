@@ -7,5 +7,7 @@ setup(
     install_requires=[
         "django",
         "django-markdownify",
+        "django-extensions",
+        "dynaconf",
     ],
 )
