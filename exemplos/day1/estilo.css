@@ -1,0 +1,33 @@
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    background-color: lightcoral;
+}
+
+#logo_python {
+    width: 80px;
+
+}
+
+#logo_django {
+    width: 40px;
+
+}
+
+img {
+    border-radius:  50%;
+}
+
+p {
+    padding: 5px;
+}
+
+p.principal {
+    border: 1px dashed black;
+}
+
+p.aviso {
+    border: 2px  red;
+}
