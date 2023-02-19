@@ -125,6 +125,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+from dynaconf import DjangoDynaconf  # noqa
+
 settings = DjangoDynaconf(
     __name__,
     load_dotenv=False,
