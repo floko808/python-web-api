@@ -124,3 +124,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+settings = DjangoDynaconf(
+    __name__,
+    load_dotenv=False,
+    envvar_prefix='BLOG',
+    env_switcher="BLOG_ENV",
+    settings_files=["blog_settings.toml"]
+)
+
