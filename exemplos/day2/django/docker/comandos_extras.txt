@@ -1,0 +1,8 @@
+# rodar o compose
+docker compose up -d 
+
+# criar o BD
+docker compose exec django python manage.py migrate --noinput 
+
+# criar o uduário admin do blog
+docker compose exec django python manage.py createsuperuser --username=admin --email=admin@blogdjango.com
